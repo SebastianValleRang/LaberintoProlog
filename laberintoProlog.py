@@ -34,8 +34,7 @@ for f in range(fil-1):
 
         if((actual != "|") & (abyacente != "|")):
             er = "conecta("+str(actual)+", "+str(abyacente)+").\n"
-
-            
+            #prolog.assertz("conecta("+str(actual)+", "+str(abyacente)+").")
             
             e.write(er)
 
@@ -45,8 +44,7 @@ for f in range(fil-1):
     for c in range(col-1):
 
         actual = arreglo[f][c]
-        abyacente = arreglo[f+1
-                            ][c]
+        abyacente = arreglo[f+1][c]
 
         if((actual != "|") & (abyacente != "|")):
             er = "conecta("+str(actual)+", "+str(abyacente)+").\n"
